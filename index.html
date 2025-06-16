@@ -22,13 +22,15 @@
             <h1>IMC</h1>
         </header>
         <main>
-            <form action="">
+            <form id="form">
                 <label for="weight">Please, write your weight</label>
                 <input type="text" name="" id="weight">
                 <label for="height">Please, write your height</label>
                 <input type="text" name="" id="height">
-                <button type="button">Calcular!</button>
+                <button type="button" id="calculate" onclick="spaImc()">Calculate</button>
             </form>
+            <p>Your IMC is: </p>
+            <p id="result"> </p>
         </main>
         <footer>
 
