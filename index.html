@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This web application, developed with HTML, CSS, and JavaScript, aims to calculate a person's Body Mass Index (BMI) based on their weight and height. It provides a simple and intuitive interface so users can quickly obtain their results and learn their classification based on the value obtained.">
+        <meta name="description"
+            content="This web application, developed with HTML, CSS, and JavaScript, aims to calculate a person's Body Mass Index (BMI) based on their weight and height. It provides a simple and intuitive interface so users can quickly obtain their results and learn their classification based on the value obtained.">
         <meta name="keywords" content="Calculator, IMC">
         <meta name="sitedomain" content=" https://github.com/wilffren/SPA_IMC">
         <meta name="organization" content="wilffren">
@@ -22,16 +23,51 @@
             <h1>IMC</h1>
         </header>
         <main>
-            <form id="form">
-                <label for="weight">Please, write your weight</label>
-                <input type="text" name="" id="weight">
-                <label for="height">Please, write your height</label>
-                <input type="text" name="" id="height">
-                <button type="button" id="calculate" onclick="spaImc()">Calculate</button>
-                <button type="reset">Clear Inputs</button>
-            </form>
+            <section>
+                <form id="form">
+                    <label for="weight">Please, write your weight: </label>
+                    <input type="text" name id="weight">
+                    <label for="height">Please, write your height: </label>
+                    <input type="text" name id="height">
+                    <button type="button" id="calculate"
+                        onclick="spaImc()">Calculate</button>
+                    <button type="reset">Clear Inputs</button>
+                </form>
+
+            </section>
+
             <p>Your IMC is: </p>
             <p id="result"> </p>
+
+            <section>
+                <table border="1">
+                    <tr>
+                        <td>Clasification</td>
+                        <td>Levels</td>
+                    </tr>
+
+                    <tr>
+                        <td>Low Weight</td>
+                        <td>IMC less 18.5</td>
+                    </tr>
+
+                    <tr>
+                        <td>Normal Weight</td>
+                        <td>IMC more 18.5 and until 24.9</td>
+                    </tr>
+
+                    <tr>
+                        <td>OverWeight</td>
+                        <td>IMC more 25 and until 29.9</td>
+                    </tr>
+
+                    <tr>
+                        <td>Obesity</td>
+                        <td>IMC More 30</td>
+                    </tr>
+
+                </table>
+            </section>
         </main>
         <footer>
 

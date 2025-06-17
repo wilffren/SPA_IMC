@@ -26,7 +26,3 @@ if (result <= 18.5){
 
 
 
-
-
-// create a table with the clasification and write that information into the console
-
