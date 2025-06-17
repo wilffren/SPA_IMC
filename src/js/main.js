@@ -1,16 +1,3 @@
-
-
-
-// myHeight = prompt(message = "please, write your height ")
-// myWeight = prompt(message = "please, write your weight ")
-
-// imc = myWeight / (myHeight * myHeight)
-
-// alert("your imc is: " + imc)
-
-// create a table with the clasification and write that information into the console
-
-
 function spaImc(){
 
 
@@ -24,4 +11,22 @@ buttonCalculate = myWeight / (myHeight * myHeight)
 
 let result = document.getElementById('result').innerHTML = buttonCalculate
 
+if (result <= 18.5){
+    console.log("Low Weight")
+}else if (result > 18.5 && result <= 24.9){
+    console.table("Normal Weight")
+}else if (result > 25 && result <= 29.9){
+    console.log("Overweight")
+}else if (result > 30){
+    console.log("Obesity")
 }
+
+}
+
+
+
+
+
+
+// create a table with the clasification and write that information into the console
+
