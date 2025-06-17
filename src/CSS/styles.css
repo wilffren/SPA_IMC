@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(137, 11, 255);
+}
+
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form input{
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+#form button{
+    background-color: green;
+    color: black;
+    font-size: 17px;
+    border-radius: 9px;
+}
+
+p{
+    text-align: center;
+    color: red;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+table{
+    margin-top: 3%;
+}
+    
+
+ tr{
+    color: aquamarine;
+}
+
+ td{
+    color: aqua;
+}
